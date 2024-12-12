@@ -26,6 +26,34 @@ Integrate GPS to display weather for the user's current location.
 Dynamic background images or weather icons based on weather conditions (e.g., rain icon for rainy weather).
 Intuitive, responsive design.
 
+Technologies and Tools:
+
+1.Flutter
+
+Framework for building the app 
+
+2.Weather API
+
+Use API like OpenWeatherAPI to fetch weather data.
+
+3.State Management
+
+Use Provider for managing app state efficiently.
+
+4.HTTP Package
+
+Fetch data from APIs (http package).
+
+4.Geolocation and Geocoding
+
+Used geolocator for accessing the user's location.
+User's GPS location is converted into location name using geocoding.
+
+5.intl package
+
+Formatting Date and Time throughout the application.
+
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
