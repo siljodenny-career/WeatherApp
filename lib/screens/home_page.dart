@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(),
         body: SingleChildScrollView(
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 90),
+            padding:size.width >=600 ? const EdgeInsets.symmetric(horizontal: 50, vertical: 50) :const EdgeInsets.symmetric(horizontal: 20, vertical: 90),
             height: size.height,
             width: size.width,
             decoration: BoxDecoration(
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: const Alignment(0, -1),
                   child: Container(
                     height: _clicked ? 110 : 70,
-                    width: 300,
+                    width: size.width>=600 ? 800 : 600,
                     padding:
                         const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                     decoration: BoxDecoration(
@@ -286,8 +286,8 @@ class _HomePageState extends State<HomePage> {
                     Align(
                       alignment: const Alignment(0, 1),
                       child: Container(
-                        padding: const EdgeInsets.all(20),
-                        height: size.height / 5,
+                        padding:size.height>=600 ? const EdgeInsets.all(20) :const EdgeInsets.all(10),
+                        height:size.height>=600? size.height / 5 :size.height / 4,
                         width: size.width,
                         decoration: BoxDecoration(
                             color: Colors.black.withOpacity(0.5),
